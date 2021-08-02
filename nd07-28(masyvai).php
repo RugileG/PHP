@@ -17,8 +17,8 @@
     //1 ir 2 uzduotis-------------------------------------
         $zoo = [
             ['species'=> 'monkey','age'=>13,'gender'=>'male'],
-            ['species'=> 'aligtor','age'=>13,'gender'=>'male'],
-            ['species'=> 'rat','age'=>13,'gender'=>'male'],
+            ['species'=> 'aligtor','age'=>12,'gender'=>'male'],
+            ['species'=> 'rat','age'=>11,'gender'=>'male'],
             ['species'=> 'kangaroo','age'=>13,'gender'=>'female']
         ];
 
@@ -32,7 +32,7 @@
 
 
         }
-
+        echo "<br>";
         for ($i=0; $i < count($zoo) ; $i+=2) { 
            $animal = $zoo[$i];
            echo $animal['age'];
@@ -255,6 +255,7 @@ for ($i=0; $i < count($array4) ; $i++) {
 <?php
     //6uzduotis----------------------------------------------
     echo '<h3>6.</h3>';
+
     $array1 = [];
     for ($i=1; $i < 101; $i++) { 
        $array1[$i] = rand(100,999);
@@ -268,23 +269,28 @@ for ($i=0; $i < count($array4) ; $i++) {
 
 
     $array2 = [];
-    for ($i=1; $i < 101; $i++) { 
-        $array2[$i] = rand(100,999);
+    for ($y=1; $y < 101; $y++) { 
+        $array2[$y] = rand(100,999);
     }
 
         $array2Unique = array_unique($array2);
         print_r($array2Unique);
         
 
-    //7uzduotis------------------------------------------------
+    //7uzduotis---------Sugeneruokite masyvą, kuris būtų sudarytas iš reikšmių, kurios yra pirmame 6 uždavinio masyve, bet nėra antrame 6 uždavinio masyve.
     echo '<h3>7.</h3>';
-
-
-
-
-    //8uzduotis------------------------------------------------
-    echo '<h3>8.</h3>';
+    $array3 = [];
     
+
+
+
+    //8uzduotis----------------Sugeneruokite masyvą iš elementų, kurie kartojasi abiejuose 6 uždavinio masyvuose.
+    echo '<h3>8.</h3>';
+    $array4 = [];
+
+
+
+
 
     //9uzduotis----------------------------------------------
     echo '<h3>9.</h3>';

@@ -36,7 +36,7 @@
             $array1[$i] = "A";
             
                 $array1[] = $array2;
-                $array2 = rand(3, 10);
+                $array2[] = rand(3, 10);
                 
             
 
