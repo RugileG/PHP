@@ -28,7 +28,7 @@
     //2uzduotis------2. sukurkite masyvą su 10 skaičių nuo 0 iki 10
         //2b. sukurkite kitą masyvą su 10 skaičių nuo 10 iki 20
         // 2c. pasinaudoję ciklu atspausdinkite 100 atsitiktinių skaičių iš 2b masyvo.t.y kiekvienoje ciklo iteracijoje imkite atsitiktinį 2b masyvo skaičių.
-        
+    
       //a  
         echo "<h5>2.<h5>";
         
