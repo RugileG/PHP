@@ -21,7 +21,6 @@
         echo $value . " ";
     }
 
-
     ?>
 
     <?php
