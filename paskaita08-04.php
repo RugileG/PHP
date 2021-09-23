@@ -20,6 +20,12 @@
     foreach ($array as $value) {
         echo $value . " ";
     }
+    /*arba
+    for ($i=0; $i < count($array); $i++){
+        echo $array[$i] . " ";
+    }
+    
+    */ 
 
     ?>
 
@@ -31,10 +37,10 @@
       //a  
         echo "<h5>2.<h5>";
         
-        $arr1 = [];
-        $arr2 = [];
+      //  $arr1 = [];
+      //  $arr2 = [];
         for ($i=0; $i < 10; $i++) { 
-            $arr1 = range(0, 9);
+            $arr1 = range(0, 9); //arba $arr[] = $i;
             $arr2 = range(10, 20);
         }
 
@@ -57,6 +63,15 @@
         //3b. atspausdinkite duomenis. (gausis skaičių stačiakampis).
        // 3c. padarykite tą patį, ką  darėte 3b, tik spausdinkite tuos skaičius pakeltus kvadratu
        echo "<h5>3.<h5>";
+
+       /*for ($i=0; $i < 10; $i++){
+           $arrMin = [];
+           for ($i=0; $i < 10; $i++){
+            $arrMin[] = rand(0, 9)
+           }
+           $arr4[] = $arrMin
+        }
+       }*/ 
 
         $array = [];
 
@@ -191,20 +206,20 @@
 
     echo "b) ";//------------------------------B--------------------------------------
     //1b. sukurkite funkciją kuri priima vieną parametrą ir išspausdina tekstas "labas" + tas paduotas kintamasis
-    
-    function hello($i="") {
-        $i="pasauli";
-        echo "labas, " . $i;
+    hello("Simai");
+    function hello($name) {
+        
+        echo "labas, " . $name;
     }
     
-    hello();
+    
 
     echo "<br>c) ";//-------------------------------C-------------------------------------
     //1c. sukurkite funkciją kuri gražina skaičiaus PI pirmus 8 skaičius
-    function roundPi(){
-    echo round(pi(), 8);
+    function myPi(){
+    return round(pi(), 8);
     }
-    roundPi();
+    echo myPi();
 
     echo "<br>d) ";//-------------------------------D-------------------------------------
     //1d. sukurkite funkciją kuri gražina dviejų parametrų sąndaugą.
@@ -212,37 +227,37 @@
     function multiply($b=0, $c=0) {
         echo $b * $c;
     }
-    multiply(7,5);
+    echo multiply( 10, multiply(7,5));
 
     echo "<br>e) ";//-------------------------------E-------------------------------------
     //1e. sukurkite funkciją kuri apskaičiuoja skritulio PLOTĄ. ši funkcija priima 1 parametrą bei naudoja 1c. funkciją savo viduje, kad gautų PI reikšmę.
 
-    function circleR($r=0) {
+    function circleArea($r) {
+        return myPi() * ($r * $r);
         
-        return roundPi() * ($r*$r);
     }
 
-    circleR(8);
+    echo circleArea(8);
     
 
 
     echo "<br>f) ";//----------------------------F----------------------------------------
     //1f. sukurkite funkciją kuri apskaičiuoja skritulio ILGĮ. ši funkcija priima 1 parametrą bei naudoja 1c. funkciją savo viduje, kad gautų PI reikšmę.
 
+    function circleLength($r){
+        return 2 * myPi() * $r;
+    }
+   echo circleLength(20);
 
     echo "<br>g) ";//-----------------------------G---------------------------------------
     //1g. sukurkite funkciją kuri: priima vieną parametrą. savyje iškviecia 1e ir 1f funkcijas ir atspausdina: apskritimo ilgis: (tai ka gražino funkcija 1f) apskritimo plotas: (tai ka gražino funkcija 1g)
     
+    function circleInfo($r){
+        echo "apskritimo ilgis: " . circleLength($r) . "<br>";
+        echo "apskritimo plotas: " . circleArea($r) . "<br>";
 
-
-
-
-
-
-
-
-
- 
+    }
+    circleInfo(24);
     
     
     ?>

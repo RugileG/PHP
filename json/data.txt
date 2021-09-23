@@ -1,0 +1,1 @@
+[{"id":1,"manufacturer":"VW","model":"Passat","year":"2008","color":"Black","distance":"200000","fuel":"Diesel"},{"id":2,"manufacturer":"Audi","model":"A6","year":"2010","color":"Silver","distance":"200500","fuel":"Diesel"}]
